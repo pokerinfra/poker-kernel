@@ -1,0 +1,8 @@
+node_modules/
+dist/
+build/
+*.html
+jest-html-reporters-attach/
+.vscode/
+.npmrc
+.DS_Store

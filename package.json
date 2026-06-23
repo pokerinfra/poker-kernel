@@ -1,0 +1,61 @@
+{
+    "name": "@pokerinfra/poker-kernel",
+    "version": "1.0.0",
+    "description": "Production-grade stateful poker rules engine — NLH, PLO, PLO5, PLO6 with side pots, run-it-twice, pre-checks, and tournament support",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "require": "./dist/index.js",
+            "import": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "keywords": [
+        "poker",
+        "poker-engine",
+        "poker-kernel",
+        "texas-holdem",
+        "omaha",
+        "plo",
+        "nlh",
+        "game-engine",
+        "rules-engine",
+        "side-pot",
+        "run-it-twice",
+        "tournament",
+        "typescript"
+    ],
+    "author": "Poker Infra",
+    "license": "AGPL-3.0",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pokerinfra/poker-kernel.git"
+    },
+    "homepage": "https://github.com/pokerinfra/poker-kernel#readme",
+    "bugs": {
+        "url": "https://github.com/pokerinfra/poker-kernel/issues"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build",
+        "format": "prettier --write \"src/**/*.ts\"",
+        "format:check": "prettier --check \"src/**/*.ts\""
+    },
+    "files": [
+        "dist",
+        "src",
+        "README.md"
+    ],
+    "devDependencies": {
+        "@types/node": "22.15.29",
+        "prettier": "^3.8.3",
+        "typescript": "5.8.3"
+    },
+    "dependencies": {
+        "pokersolver": "2.1.4"
+    }
+}
